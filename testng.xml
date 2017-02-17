@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="ShoppingCartTesting" thread-count="1" verbose="1" >
+	<parameter name="appUrl" value="http://ctsc00673457701.cts.com:4503/content/neo/en/buy-online-landing.html"/>
+	<test name="regressiontest">  
+		<classes>
+		  <class name="org.cdsdemo.shoppingcart.regression.HomePageTest"/>
+		</classes>  
+	</test>
+</suite>
