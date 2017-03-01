@@ -1,10 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
 <suite name="ShoppingCartTesting" thread-count="1" verbose="1" >
-	<parameter name="appUrl" value="http://ctsc00673457701.cts.com:4503/content/neo/en/buy-online-landing.html"/>
+	
+	<parameter name="appUrl" value="http://ec2-52-52-237-5.us-west-1.compute.amazonaws.com:9080/ShoppingCart"/>
+	<parameter name="remoteDriverUrl" value="http://ec2-52-52-237-5.us-west-1.compute.amazonaws.com:4444/wd/hub"/>
+	
 	<test name="regressiontest">  
 		<classes>
 		  <class name="org.cdsdemo.shoppingcart.regression.HomePageTest"/>
 		</classes>  
 	</test>
+	
 </suite>
